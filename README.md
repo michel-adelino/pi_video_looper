@@ -2,9 +2,7 @@
 An application to turn your Raspberry Pi into a dedicated looping video playback device.
 Can be used in art installations, fairs, theatre, events, infoscreens, advertisements etc...
 
-Works right out of the box, but also has a lot of customisation options to make it fit your use case. See the [video_looper.ini](https://github.com/adafruit/pi_video_looper/blob/master/assets/video_looper.ini) configuration file for an overview of options. 
-
-If you miss a feature just post an issue here on Github. (https://github.com/adafruit/pi_video_looper)
+Works right out of the box, but also has a lot of customisation options to make it fit your use case. See the [video_looper.ini](assets/video_looper.ini) configuration file for an overview of options.
 
 Currently only the __Legacy__ version of Raspberry Pi OS Lite is supported.  
 The last working image is this one:
@@ -12,9 +10,6 @@ The last working image is this one:
 
 If you need to run this image on PI 3A+ you need to add newer firmware files after the flashing.
 Download firmware files from [here](https://github.com/raspberrypi/firmware/archive/refs/heads/stable.zip) and copy all the fixup*.dat and start*.elf from the boot folder of the zip to the boot folder of your SD card (overwriting existing files)
-
-For a detailed tutorial visit: <https://learn.adafruit.com/raspberry-pi-video-looper/installation>  
-There are also pre-compiled images available from <https://videolooper.de> (but they might not always contain the latest version of pi_video_looper)
 
 ## Changelog
 #### new in v1.0.21 
@@ -147,7 +142,7 @@ You need to run this if you use the image mentioned above (2022-01-28-raspios-bu
 then proceed as normal:    
 `sudo apt-get install git`  
 `cd ~`  
-`git clone https://github.com/adafruit/pi_video_looper`  
+`git clone <repository-url> pi_video_looper`  
 `cd pi_video_looper`  
 `sudo ./install.sh`
 
@@ -163,7 +158,7 @@ For backing up the current ini:
 For the update:    
 `cd ~`   
 `sudo rm -rf pi_video_looper`   
-`git clone https://github.com/adafruit/pi_video_looper`    
+`git clone <repository-url> pi_video_looper`    
 `cd pi_video_looper`   
 `sudo ./install.sh` 
 
@@ -203,7 +198,7 @@ The video looper can be controlled via keyboard input or via configured GPIO pin
 Keyboard control is enabled by default via the `keyboard_control` setting in the video_looper.ini file. 
 
 #### keyboard commands:
-The following keyboard commands are active by default (can be disabled in the [video_looper.ini](https://github.com/adafruit/pi_video_looper/blob/master/assets/video_looper.ini)):
+The following keyboard commands are active by default (can be disabled in the [video_looper.ini](assets/video_looper.ini)):
 * "ESC" - stops playback and exits video_looper
 * "k" - sKip - stops the playback of current file and plays next file
 * "b" - Back - stops the playback of current file and plays previous file
